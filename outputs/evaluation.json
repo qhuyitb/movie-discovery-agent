@@ -1,0 +1,183 @@
+{
+  "protocol": {
+    "split": "temporal leave-last-out per user",
+    "holdout": "last 20% of each user's ratings, capped at 10",
+    "min_history": 20,
+    "relevance": "held-out rating >= 4.0",
+    "k": 10,
+    "candidate_pool": "unseen movies with >= 5 training ratings",
+    "train_ratings": 69427,
+    "test_ratings": 4637,
+    "users_with_holdout": 533
+  },
+  "ranking": {
+    "popularity": {
+      "users_evaluated": 497,
+      "recall@10": 0.0514,
+      "precision@10": 0.0247,
+      "ndcg@10": 0.0452,
+      "map@10": 0.023,
+      "hit@10": 0.1891,
+      "catalogue_coverage": 0.0119,
+      "long_tail_share(<50 train ratings)": 0.0893,
+      "by_history_size": {
+        "dense (>150)": {
+          "users": 112,
+          "recall@10": 0.0346,
+          "ndcg@10": 0.0316,
+          "hit@10": 0.1696
+        },
+        "medium (50-150)": {
+          "users": 160,
+          "recall@10": 0.0491,
+          "ndcg@10": 0.0406,
+          "hit@10": 0.175
+        },
+        "sparse (<50)": {
+          "users": 225,
+          "recall@10": 0.0615,
+          "ndcg@10": 0.0553,
+          "hit@10": 0.2089
+        }
+      }
+    },
+    "user_cf": {
+      "users_evaluated": 497,
+      "recall@10": 0.08,
+      "precision@10": 0.038,
+      "ndcg@10": 0.0669,
+      "map@10": 0.0337,
+      "hit@10": 0.2958,
+      "catalogue_coverage": 0.0557,
+      "long_tail_share(<50 train ratings)": 0.1278,
+      "by_history_size": {
+        "dense (>150)": {
+          "users": 112,
+          "recall@10": 0.0412,
+          "ndcg@10": 0.0364,
+          "hit@10": 0.1964
+        },
+        "medium (50-150)": {
+          "users": 160,
+          "recall@10": 0.0839,
+          "ndcg@10": 0.0717,
+          "hit@10": 0.3125
+        },
+        "sparse (<50)": {
+          "users": 225,
+          "recall@10": 0.0965,
+          "ndcg@10": 0.0786,
+          "hit@10": 0.3333
+        }
+      }
+    },
+    "item_cf": {
+      "users_evaluated": 497,
+      "recall@10": 0.0242,
+      "precision@10": 0.0141,
+      "ndcg@10": 0.0206,
+      "map@10": 0.0083,
+      "hit@10": 0.1167,
+      "catalogue_coverage": 0.289,
+      "long_tail_share(<50 train ratings)": 0.6555,
+      "by_history_size": {
+        "dense (>150)": {
+          "users": 112,
+          "recall@10": 0.024,
+          "ndcg@10": 0.0241,
+          "hit@10": 0.1339
+        },
+        "medium (50-150)": {
+          "users": 160,
+          "recall@10": 0.0289,
+          "ndcg@10": 0.0258,
+          "hit@10": 0.1437
+        },
+        "sparse (<50)": {
+          "users": 225,
+          "recall@10": 0.021,
+          "ndcg@10": 0.0151,
+          "hit@10": 0.0889
+        }
+      }
+    },
+    "content": {
+      "users_evaluated": 497,
+      "recall@10": 0.0118,
+      "precision@10": 0.007,
+      "ndcg@10": 0.0119,
+      "map@10": 0.0053,
+      "hit@10": 0.0624,
+      "catalogue_coverage": 0.1834,
+      "long_tail_share(<50 train ratings)": 0.8429,
+      "by_history_size": {
+        "dense (>150)": {
+          "users": 112,
+          "recall@10": 0.0131,
+          "ndcg@10": 0.0111,
+          "hit@10": 0.0804
+        },
+        "medium (50-150)": {
+          "users": 160,
+          "recall@10": 0.0089,
+          "ndcg@10": 0.0077,
+          "hit@10": 0.0437
+        },
+        "sparse (<50)": {
+          "users": 225,
+          "recall@10": 0.0133,
+          "ndcg@10": 0.0152,
+          "hit@10": 0.0667
+        }
+      }
+    },
+    "hybrid": {
+      "users_evaluated": 497,
+      "recall@10": 0.0865,
+      "precision@10": 0.0416,
+      "ndcg@10": 0.073,
+      "map@10": 0.0358,
+      "hit@10": 0.328,
+      "catalogue_coverage": 0.1019,
+      "long_tail_share(<50 train ratings)": 0.233,
+      "by_history_size": {
+        "dense (>150)": {
+          "users": 112,
+          "recall@10": 0.0358,
+          "ndcg@10": 0.0335,
+          "hit@10": 0.1875
+        },
+        "medium (50-150)": {
+          "users": 160,
+          "recall@10": 0.09,
+          "ndcg@10": 0.0812,
+          "hit@10": 0.3563
+        },
+        "sparse (<50)": {
+          "users": 225,
+          "recall@10": 0.1092,
+          "ndcg@10": 0.087,
+          "hit@10": 0.3778
+        }
+      }
+    }
+  },
+  "rating_prediction": {
+    "user_cf": {
+      "rmse": 0.9122,
+      "mae": 0.6914
+    },
+    "item_cf": {
+      "rmse": 0.8977,
+      "mae": 0.6783
+    },
+    "user_mean_baseline": {
+      "rmse": 0.9733,
+      "mae": 0.7509
+    },
+    "global_mean_baseline": {
+      "rmse": 1.0658,
+      "mae": 0.8619
+    }
+  }
+}

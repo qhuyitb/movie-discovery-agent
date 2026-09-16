@@ -1,0 +1,265 @@
+{
+  "intent_classification": {
+    "n": 35,
+    "accuracy_overall": 0.686,
+    "accuracy_on_written_against_phrasings": 1.0,
+    "accuracy_on_novel_paraphrases": 0.476,
+    "confusions": {
+      "identify -> unknown": 1,
+      "recommend -> unknown": 3,
+      "recommend -> content_search": 1,
+      "peer_opinion -> movie_info": 1,
+      "explain -> unknown": 1,
+      "blind_spots -> unknown": 2,
+      "similar_movies -> recommend": 1,
+      "similar_users -> movie_info": 1
+    },
+    "failures": [
+      {
+        "utterance": "my id is 42",
+        "gold": "identify",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "put something on for me",
+        "gold": "recommend",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "give me a film for tonight",
+        "gold": "recommend",
+        "predicted": "content_search",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "anything worth watching?",
+        "gold": "recommend",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "surprise me",
+        "gold": "recommend",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "how do folks with my kind of taste rate Fargo?",
+        "gold": "peer_opinion",
+        "predicted": "movie_info",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "on what basis?",
+        "gold": "explain",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "which corners of cinema have I ignored",
+        "gold": "blind_spots",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "am I stuck in a rut genre wise",
+        "gold": "blind_spots",
+        "predicted": "unknown",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "what else is like Memento",
+        "gold": "similar_movies",
+        "predicted": "recommend",
+        "correct": false,
+        "seen_phrasing": false
+      },
+      {
+        "utterance": "who rates films the way I do",
+        "gold": "similar_users",
+        "predicted": "movie_info",
+        "correct": false,
+        "seen_phrasing": false
+      }
+    ]
+  },
+  "content_search": {
+    "mean_genre_precision@10": 0.99,
+    "mean_audience_rating_of_returned_films": 3.369,
+    "dataset_mean_rating": 3.495,
+    "mean_share_with_fewer_than_10_ratings": 0.63,
+    "per_query": [
+      {
+        "query": "dark psychological thriller with a twist",
+        "expected_genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 38.0,
+        "mean_audience_rating_of_hits": 3.688,
+        "share_with_fewer_than_10_ratings": 0.4,
+        "top_3": [
+          "Game, The (1997)",
+          "Memento (2000)",
+          "Fight Club (1999)"
+        ]
+      },
+      {
+        "query": "heist crew pulls off an impossible robbery",
+        "expected_genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 33.5,
+        "mean_audience_rating_of_hits": 3.76,
+        "share_with_fewer_than_10_ratings": 0.3,
+        "top_3": [
+          "Ocean's Eleven (2001)",
+          "Out of Sight (1998)",
+          "Usual Suspects, The (1995)"
+        ]
+      },
+      {
+        "query": "space opera with aliens and starships",
+        "expected_genres": [
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 117.5,
+        "mean_audience_rating_of_hits": 3.76,
+        "share_with_fewer_than_10_ratings": 0.1,
+        "top_3": [
+          "Star Wars: Episode VI - Return of the Jedi (1983)",
+          "Star Wars: Episode IV - A New Hope (1977)",
+          "Star Wars: Episode V - The Empire Strikes Back (1980)"
+        ]
+      },
+      {
+        "query": "feel good comedy about friendship",
+        "expected_genres": [
+          "Comedy"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 6.5,
+        "mean_audience_rating_of_hits": 3.004,
+        "share_with_fewer_than_10_ratings": 0.7,
+        "top_3": [
+          "Calendar Girls (2003)",
+          "Trippin' (1999)",
+          "Employee of the Month (2006)"
+        ]
+      },
+      {
+        "query": "haunted house horror where something is in the basement",
+        "expected_genres": [
+          "Horror",
+          "Thriller"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 2.5,
+        "mean_audience_rating_of_hits": 2.647,
+        "share_with_fewer_than_10_ratings": 0.9,
+        "top_3": [
+          "Amityville Curse, The (1990)",
+          "Ju-on: The Grudge (2002)",
+          "Amityville 3-D (1983)"
+        ]
+      },
+      {
+        "query": "courtroom drama about a wrongful conviction",
+        "expected_genres": [
+          "Crime",
+          "Drama"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 1.0,
+        "mean_audience_rating_of_hits": 3.143,
+        "share_with_fewer_than_10_ratings": 1.0,
+        "top_3": [
+          "Margaret (2011)",
+          "Recount (2008)",
+          "Ghosts of Mississippi (1996)"
+        ]
+      },
+      {
+        "query": "animated film for children about talking animals",
+        "expected_genres": [
+          "Animation",
+          "Children"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 4.5,
+        "mean_audience_rating_of_hits": 2.35,
+        "share_with_fewer_than_10_ratings": 0.9,
+        "top_3": [
+          "The Tale of the Bunny Picnic (1986)",
+          "Zeus and Roxanne (1997)",
+          "Baby-Sitters Club, The (1995)"
+        ]
+      },
+      {
+        "query": "war film about soldiers on the front line",
+        "expected_genres": [
+          "Action",
+          "Drama",
+          "War"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 2.5,
+        "mean_audience_rating_of_hits": 3.759,
+        "share_with_fewer_than_10_ratings": 0.9,
+        "top_3": [
+          "Battle for Haditha (2007)",
+          "Pork Chop Hill (1959)",
+          "Objective, Burma! (1945)"
+        ]
+      },
+      {
+        "query": "romantic story where two people meet in a foreign city",
+        "expected_genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre_precision@10": 0.9,
+        "median_n_ratings_of_hits": 36.5,
+        "mean_audience_rating_of_hits": 3.776,
+        "share_with_fewer_than_10_ratings": 0.1,
+        "top_3": [
+          "Erin Brockovich (2000)",
+          "Kids (1995)",
+          "Schindler's List (1993)"
+        ]
+      },
+      {
+        "query": "documentary about music",
+        "expected_genres": [
+          "Documentary"
+        ],
+        "genre_precision@10": 1.0,
+        "median_n_ratings_of_hits": 1.5,
+        "mean_audience_rating_of_hits": 3.8,
+        "share_with_fewer_than_10_ratings": 1.0,
+        "top_3": [
+          "George Harrison: Living in the Material World (2011)",
+          "American Hardcore (2006)",
+          "Genghis Blues (1999)"
+        ]
+      }
+    ]
+  }
+}

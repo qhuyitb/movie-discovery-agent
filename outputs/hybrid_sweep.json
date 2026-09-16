@@ -1,0 +1,110 @@
+[
+  {
+    "user_cf": 0.8,
+    "item_cf": 0.1,
+    "content": 0.1,
+    "pop_prior": 0.1,
+    "recall@10": 0.0903,
+    "ndcg@10": 0.0741,
+    "coverage": 0.0547
+  },
+  {
+    "user_cf": 0.6,
+    "item_cf": 0.2,
+    "content": 0.2,
+    "pop_prior": 0.0,
+    "recall@10": 0.0865,
+    "ndcg@10": 0.073,
+    "coverage": 0.1019
+  },
+  {
+    "user_cf": 0.55,
+    "item_cf": 0.25,
+    "content": 0.2,
+    "pop_prior": 0.1,
+    "recall@10": 0.0849,
+    "ndcg@10": 0.0705,
+    "coverage": 0.09
+  },
+  {
+    "user_cf": 0.7,
+    "item_cf": 0.3,
+    "content": 0.0,
+    "pop_prior": 0.0,
+    "recall@10": 0.0879,
+    "ndcg@10": 0.0696,
+    "coverage": 0.0742
+  },
+  {
+    "user_cf": 0.45,
+    "item_cf": 0.35,
+    "content": 0.2,
+    "pop_prior": 0.2,
+    "recall@10": 0.0833,
+    "ndcg@10": 0.0686,
+    "coverage": 0.09
+  },
+  {
+    "user_cf": 1.0,
+    "item_cf": 0.0,
+    "content": 0.0,
+    "pop_prior": 0.0,
+    "recall@10": 0.08,
+    "ndcg@10": 0.0669,
+    "coverage": 0.0557
+  },
+  {
+    "user_cf": 0.5,
+    "item_cf": 0.5,
+    "content": 0.0,
+    "pop_prior": 0.0,
+    "recall@10": 0.0825,
+    "ndcg@10": 0.0666,
+    "coverage": 0.1278
+  },
+  {
+    "user_cf": 0.45,
+    "item_cf": 0.35,
+    "content": 0.2,
+    "pop_prior": 0.1,
+    "recall@10": 0.0806,
+    "ndcg@10": 0.0662,
+    "coverage": 0.1161
+  },
+  {
+    "user_cf": 0.45,
+    "item_cf": 0.35,
+    "content": 0.2,
+    "pop_prior": 0.0,
+    "recall@10": 0.078,
+    "ndcg@10": 0.0635,
+    "coverage": 0.1464
+  },
+  {
+    "user_cf": 0.4,
+    "item_cf": 0.3,
+    "content": 0.3,
+    "pop_prior": 0.1,
+    "recall@10": 0.0626,
+    "ndcg@10": 0.0534,
+    "coverage": 0.141
+  },
+  {
+    "user_cf": 0.0,
+    "item_cf": 1.0,
+    "content": 0.0,
+    "pop_prior": 0.0,
+    "recall@10": 0.0242,
+    "ndcg@10": 0.0206,
+    "coverage": 0.289
+  },
+  {
+    "user_cf": 0.0,
+    "item_cf": 0.0,
+    "content": 1.0,
+    "pop_prior": 0.0,
+    "recall@10": 0.0118,
+    "ndcg@10": 0.0119,
+    "coverage": 0.1834
+  }
+]
