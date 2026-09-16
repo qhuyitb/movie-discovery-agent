@@ -3,3 +3,9 @@
 __pycache__/
 *.pyc
 *.egg-info/
+
+# Never commit credentials - the LLM backend reads keys from the environment only.
+.env
+.env.*
+*.key
+*.pem
